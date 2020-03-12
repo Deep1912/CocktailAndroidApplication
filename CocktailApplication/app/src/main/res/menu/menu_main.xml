@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cocktailapplication.MainActivity">
+    <item
+        android:id="@+id/appbar_measures"
+        android:orderInCategory="100"
+        android:title="Measurments"
+        app:showAsAction="never" />
+</menu>

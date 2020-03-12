@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeasurementsActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="18dp">
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/measurments_content" />
+
+        <TextView
+            android:id="@+id/simple_syrup_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple Syrup"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/measurments_content"/>
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/simple_syrup_content"
+            android:layout_below="@id/simple_syrup_title"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/sour_ingredients_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sour Ingredients"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/simple_syrup_content"/>
+
+        <TextView
+            android:id="@+id/sour_ingredients_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Sour ingredient content"
+            android:layout_below="@id/sour_ingredients_title"/>
+
+        <TextView
+            android:id="@+id/sweet_ingredients_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sweet Ingredients"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="18dp"
+            android:layout_below="@id/sour_ingredients_content"/>
+
+        <TextView
+            android:id="@+id/sweet_ingredients_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="sweet ingredients content"
+            android:layout_below="@id/sweet_ingredients_title"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
